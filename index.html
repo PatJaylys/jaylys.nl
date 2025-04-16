@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JayLys Klusbedrijf</title>
-  <link rel="icon" type="image/x-icon" href="logo.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JayLys – Jouw partner in badkamers & vloeren</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fc;
+      color: #222;
     }
+
     header {
-      background-color: #007BFF;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid #e0e0e0;
     }
+
     header img {
-      max-height: 80px;
-      margin-bottom: 10px;
+      height: 60px;
     }
-    nav {
-      background-color: #0056b3;
-      padding: 10px;
-      text-align: center;
-    }
+
     nav a {
-      color: white;
+      margin-left: 20px;
       text-decoration: none;
-      margin: 0 15px;
+      color: #004080;
       font-weight: bold;
     }
-    main {
-      padding: 30px;
+
+    .hero {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
     }
-    footer {
-      background-color: #007BFF;
-      color: white;
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fade 16s infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero img:nth-child(1) { animation-delay: 0s; }
+    .hero img:nth-child(2) { animation-delay: 4s; }
+    .hero img:nth-child(3) { animation-delay: 8s; }
+    .hero img:nth-child(4) { animation-delay: 12s; }
+
+    @keyframes fade {
+      0%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    .quote {
+      background-color: #ffffff;
+      padding: 2rem;
       text-align: center;
-      padding: 10px;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #004080;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.ico" alt="JayLys Logo">
-    <h1>Welkom bij JayLys</h1>
-    <p>Uw betrouwbare klusbedrijf voor binnen- en buitenshuis</p>
+    <img src="JAYLYS combinatie.ico.ico" alt="JayLys logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Diensten</a>
+      <a href="#">Projecten</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Diensten</a>
-    <a href="#">Over ons</a>
-    <a href="#">Contact</a>
-  </nav>
+  <div class="hero">
+    <img src="resized_IMG_20240130_104058.jpg" alt="Project 1">
+    <img src="resized_IMG_20240130_104041.jpg" alt="Project 2">
+    <img src="resized_IMG_20240130_104022.jpg" alt="Project 3">
+    <img src="resized_IMG_20240130_104017.jpg" alt="Project 4">
+  </div>
 
-  <main>
-    <h2>Over JayLys</h2>
-    <p>JayLys is het klusbedrijf van Patrick de Vries. Al sinds zijn 17e werkzaam in de tuinbranche als hovenier, heeft hij zich ontwikkeld tot specialist in laminaatvloeren en badkamers. JayLys staat voor kwaliteit, betrouwbaarheid en vakmanschap.</p>
+  <div class="quote">
+    “Onze focus? Topkwaliteit, betrouwbare service en een afwerking waar je trots op kunt zijn.”
+  </div>
 
-    <h2>Onze diensten</h2>
-    <ul>
-      <li>Laminaat & vloeren leggen</li>
-      <li>Complete badkamerrenovaties</li>
-      <li>Tuinonderhoud en bestrating</li>
-      <li>Algemene klussen in en om het huis</li>
-    </ul>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 JayLys – Klusbedrijf van Patrick de Vries</p>
-  </footer>
 </body>
 </html>
