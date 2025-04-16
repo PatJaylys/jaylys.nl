@@ -2,136 +2,55 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diensten – JayLys</title>
+  <title>Diensten - Jaylys Klusbedrijf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fc;
-      color: #222;
+    .projectfoto {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
-
-    header {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 2px solid #e0e0e0;
-    }
-
-    header img {
-      height: 60px;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #004080;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-    }
-
-    h1 {
-      color: #004080;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .service {
-      background-color: #ffffff;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-left: 5px solid #004080;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .service h2 {
-      color: #004080;
-    }
-
-    form {
-      background-color: #ffffff;
-      padding: 2rem;
-      margin-top: 3rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      border-left: 5px solid #004080;
-    }
-
-    form h3 {
-      margin-top: 0;
-      color: #004080;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #004080;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    button:hover {
-      background-color: #003060;
+    .dienstblok {
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="JAYLYS combinatie.ico.ico" alt="JayLys logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="over-ons.html">Over ons</a>
-      <a href="diensten.html">Diensten</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Onze Diensten</h1>
+      <p>Bekijk hier enkele van onze recente projecten en de werkzaamheden die wij uitvoeren.</p>
+    </div>
   </header>
 
-  <div class="container">
-    <h1>Onze Diensten</h1>
-
-    <div class="service">
-      <h2>Laminaatvloeren</h2>
-      <p>Professionele installatie van duurzame en stijlvolle laminaatvloeren. Perfect gelegd en afgewerkt tot in de plint.</p>
+  <main class="container">
+    <div class="dienstblok">
+      <h2>Volledig uitgeruste badkamer met luxe afwerking</h2>
+      <img src="IMG_20240130_104058 (1).jpg" alt="Badkamer met dubbele wastafel" class="projectfoto">
+      <p>In deze badkamer is gekozen voor een dubbele wastafel met gouden kranen, ingebouwde spiegelverlichting en marmerlook wandafwerking. Alles volledig op maat geplaatst.</p>
     </div>
 
-    <div class="service">
-      <h2>Badkamer renovatie</h2>
-      <p>Van sloop tot oplevering. Wij verzorgen de volledige transformatie van jouw badkamer – met oog voor comfort en detail.</p>
+    <div class="dienstblok">
+      <h2>Strakke afwerking met ruime ligbadopstelling</h2>
+      <img src="IMG_20240130_104041 (1).jpg" alt="Bad met wandtegel" class="projectfoto">
+      <p>Dit project toont een elegant vrijstaand ligbad met goudkleurige inbouwkraan, uitgevoerd in een rustige en moderne stijl met een onderhoudsvriendelijke tegelwand.</p>
     </div>
 
-    <div class="service">
-      <h2>Afbouw & afwerking</h2>
-      <p>Strakke afwerkingen, tegelwerk, plafonds en wanden. Alles om jouw ruimte functioneel én esthetisch perfect af te maken.</p>
+    <div class="dienstblok">
+      <h2>Net afgewerkt toilet in natuurlijke stijl</h2>
+      <img src="IMG_20240130_104022 (1).jpg" alt="Toilet en afwerking" class="projectfoto">
+      <p>Modern toilet in marmerlook afwerking met bijpassende accessoires. Compact, stijlvol en volledig afgestemd op de rest van de badkamer.</p>
     </div>
 
-    <form name="offerte" method="POST" data-netlify="true">
-      <h3>Vraag een vrijblijvende offerte aan</h3>
-      <input type="text" name="naam" placeholder="Je naam" required>
-      <input type="email" name="email" placeholder="Je e-mailadres" required>
-      <textarea name="project" rows="5" placeholder="Omschrijf je project of wensen..." required></textarea>
-      <button type="submit">Verstuur aanvraag</button>
-    </form>
-  </div>
+    <a href="contact.html" class="button">Vraag een offerte op maat aan</a>
+  </main>
 
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jaylys. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
 </body>
 </html>
