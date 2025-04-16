@@ -1,59 +1,63 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f5f5f5;
-  color: #333;
+  background: #f0f4fa;
+  color: #222;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: auto;
   padding: 20px;
-  background: white;
 }
 
-img.hero {
+header {
+  background-color: #0057b8;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 10px;
+  margin: 20px 0;
+  border-radius: 6px;
 }
 
 h1 {
   font-size: 2rem;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
-p {
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.5;
+h2 {
+  color: #0057b8;
+}
+
+ul.diensten {
+  list-style: none;
+  padding: 0;
+}
+
+ul.diensten li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .button {
   display: inline-block;
-  background: #007acc;
+  background-color: #0057b8;
   color: white;
-  padding: 10px 20px;
-  margin: 20px auto;
-  border-radius: 5px;
+  padding: 12px 24px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
+footer {
+  background: #eaeaea;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
 }
