@@ -2,96 +2,36 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JayLys – Jouw partner in badkamers & vloeren</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fc;
-      color: #222;
-    }
-
-    header {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 2px solid #e0e0e0;
-    }
-
-    header img {
-      height: 60px;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #004080;
-      font-weight: bold;
-    }
-
-    .hero {
-      position: relative;
-      height: 500px;
-      overflow: hidden;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      animation: fade 16s infinite;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .hero img:nth-child(1) { animation-delay: 0s; }
-    .hero img:nth-child(2) { animation-delay: 4s; }
-    .hero img:nth-child(3) { animation-delay: 8s; }
-    .hero img:nth-child(4) { animation-delay: 12s; }
-
-    @keyframes fade {
-      0%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
-    }
-
-    .quote {
-      background-color: #ffffff;
-      padding: 2rem;
-      text-align: center;
-      font-size: 1.5rem;
-      font-style: italic;
-      color: #004080;
-    }
-  </style>
+  <title>Jaylys Klusbedrijf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <img src="JAYLYS combinatie.ico.ico" alt="JayLys logo">
-    <nav>
-      <a href="#">Home</a>
-      <a href="over-ons.html">Over ons</a>
-      <a href="#">Diensten</a>
-      <a href="#">Projecten</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Jaylys Klusbedrijf</h1>
+      <p>Betrouwbaar vakmanschap voor jouw klus in huis of tuin</p>
+    </div>
   </header>
 
-  <div class="hero">
-    <img src="resized_IMG_20240130_104058.jpg" alt="Project 1">
-    <img src="resized_IMG_20240130_104041.jpg" alt="Project 2">
-    <img src="resized_IMG_20240130_104022.jpg" alt="Project 3">
-    <img src="resized_IMG_20240130_104017.jpg" alt="Project 4">
-  </div>
+  <main class="container">
+    <img src="resized_IMG_20240130_104017.jpg" alt="Klus in uitvoering" class="hero">
 
-  <div class="quote">
-    “Onze focus? Topkwaliteit, betrouwbare service en een afwerking waar je trots op kunt zijn.”
-  </div>
+    <h2>Onze diensten</h2>
+    <ul class="diensten">
+      <li>Laminaat en vloerafwerking</li>
+      <li>Badkamer- en toiletverbouwingen</li>
+      <li>Schilder- en stucwerk</li>
+      <li>Complete renovaties</li>
+    </ul>
 
+    <a href="contact.html" class="button">Vrijblijvend offerte aanvragen</a>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jaylys. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
 </body>
-</html><!-- Laatste update voor livegang -->
-
+</html>
